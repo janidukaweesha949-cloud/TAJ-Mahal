@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="si" id="html-root">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="තාජ් මහල් - ලෝකයේ අද්භූත නිර්මාණ 7 අතරින් එකක් වන තාජ් මහල් ගැන සම්පූර්ණ තොරතුරු. Taj Mahal - Complete information about one of the 7 Wonders of the World.">
+    <meta name="author" content="Janidu Kaveesha">
+    <title>තාජ් මහල් | Taj Mahal - Janidu Kaveesha</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+Sinhala:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader-content">
+            <div class="loader-dome"></div>
+            <div class="loader-text">තාජ් මහල්</div>
+            <div class="loader-bar"><div class="loader-progress"></div></div>
+        </div>
+    </div>
+
+    <!-- Language Toggle -->
+    <div class="lang-toggle" id="langToggle">
+        <button class="lang-btn active" data-lang="si" id="btnSinhala">සිංහල</button>
+        <button class="lang-btn" data-lang="en" id="btnEnglish">English</button>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-icon">🕌</span>
+                <span class="logo-text">Janidu Kaveesha</span>
+            </a>
+            <div class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link" data-si="මුල් පිටුව" data-en="Home">මුල් පිටුව</a>
+                <a href="#history" class="nav-link" data-si="ඉතිහාසය" data-en="History">ඉතිහාසය</a>
+                <a href="#features" class="nav-link" data-si="විශේෂාංග" data-en="Features">විශේෂාංග</a>
+                <a href="#gallery" class="nav-link" data-si="ගැලරිය" data-en="Gallery">ගැලරිය</a>
+                <a href="#news" class="nav-link" data-si="පුවත්" data-en="News">පුවත්</a>
+            </div>
+            <button class="nav-hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Recommended Badge -->
+    <div class="recommended-badge" id="recommendedBadge">
+        <div class="badge-glow"></div>
+        <span class="badge-icon">⭐</span>
+        <span class="badge-text" data-si="Rusiru Sir Recommended" data-en="Rusiru Sir Recommended">Rusiru Sir Recommended</span>
+    </div>
+
+    <!-- Hero Slideshow -->
+    <section id="home" class="hero-section">
+        <div class="slideshow" id="slideshow">
+            <div class="slide active" style="background-image: url('images/taj_mahal_hero.jpg')">
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                    <h1 class="slide-title" data-si="තාජ් මහල්" data-en="Taj Mahal">තාජ් මහල්</h1>
+                    <p class="slide-subtitle" data-si="ප්‍රේමයේ සදාකාලික සංකේතය" data-en="The Eternal Symbol of Love">ප්‍රේමයේ සදාකාලික සංකේතය</p>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('images/taj_mahal_night.jpg')">
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                    <h1 class="slide-title" data-si="රාත්‍රියේ අපූර්වත්වය" data-en="Magnificent Night View">රාත්‍රියේ අපූර්වත්වය</h1>
+                    <p class="slide-subtitle" data-si="සඳ එළියේ බැබළෙන සුදු කිරිවැලි" data-en="White Marble Glowing in Moonlight">සඳ එළියේ බැබළෙන සුදු කිරිවැලි</p>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('images/taj_mahal_garden.jpg')">
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                    <h1 class="slide-title" data-si="මුඝල් උද්‍යානය" data-en="The Mughal Gardens">මුඝල් උද්‍යානය</h1>
+                    <p class="slide-subtitle" data-si="චාර්බාග් උද්‍යාන සැලැස්ම" data-en="The Charbagh Garden Design">චාර්බාග් උද්‍යාන සැලැස්ම</p>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('images/taj_mahal_architecture.jpg')">
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                    <h1 class="slide-title" data-si="වාස්තු විද්‍යාත්මක අපූර්වත්වය" data-en="Architectural Marvel">වාස්තු විද්‍යාත්මක අපූර්වත්වය</h1>
+                    <p class="slide-subtitle" data-si="අද්විතීය ගල් කැටයම් සහ නිර්මාණ" data-en="Unique Stone Carvings and Designs">අද්විතීය ගල් කැටයම් සහ නිර්මාණ</p>
+                </div>
+            </div>
+        </div>
+        <!-- Slideshow Controls -->
+        <div class="slide-controls">
+            <button class="slide-btn prev" id="prevSlide">❮</button>
+            <div class="slide-dots" id="slideDots"></div>
+            <button class="slide-btn next" id="nextSlide">❯</button>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- History Section -->
+    <section id="history" class="history-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-si="ඉතිහාසය" data-en="History">ඉතිහාසය</span>
+                <h2 class="section-title" data-si="තාජ් මහල් ඉතිහාසය" data-en="History of Taj Mahal">තාජ් මහල් ඉතිහාසය</h2>
+                <div class="title-divider"><span>🕌</span></div>
+            </div>
+            
+            <div class="history-hero">
+                <div class="history-image-wrapper">
+                    <img src="images/shah_jahan_mumtaz.jpg" alt="Shah Jahan and Mumtaz Mahal" class="history-image" id="historyMainImage">
+                    <div class="image-frame"></div>
+                    <div class="image-caption" data-si="ෂාහ් ජහාන් සහ මුම්තාස් මහල්" data-en="Shah Jahan and Mumtaz Mahal">ෂාහ් ජහාන් සහ මුම්තාස් මහල්</div>
+                </div>
+                <div class="history-text">
+                    <p class="history-intro" data-si="තාජ් මහල් යනු ඉන්දියාවේ ආග්‍රා නගරයේ යමුනා ගඟ අසල පිහිටි ලෝක ප්‍රසිද්ධ සුදු කිරිවැලි සොහොනකි. මුඝල් අධිරාජ්‍යයේ පස්වැනි අධිරාජයා වූ ෂාහ් ජහාන් විසින් ඔහුගේ ප්‍රියතම බිසව වූ මුම්තාස් මහල්ගේ සොහොන ලෙස මෙය ඉදිකරන ලදී." data-en="The Taj Mahal is a world-famous white marble mausoleum located on the banks of the Yamuna River in Agra, India. It was built by Shah Jahan, the fifth emperor of the Mughal Empire, as a tomb for his beloved wife Mumtaz Mahal.">තාජ් මහල් යනු ඉන්දියාවේ ආග්‍රා නගරයේ යමුනා ගඟ අසල පිහිටි ලෝක ප්‍රසිද්ධ සුදු කිරිවැලි සොහොනකි. මුඝල් අධිරාජ්‍යයේ පස්වැනි අධිරාජයා වූ ෂාහ් ජහාන් විසින් ඔහුගේ ප්‍රියතම බිසව වූ මුම්තාස් මහල්ගේ සොහොන ලෙස මෙය ඉදිකරන ලදී.</p>
+                    <p data-si="1632 දී ආරම්භ කරන ලද මෙම මහා ව්‍යාපෘතිය සම්පූර්ණ කිරීමට වසර 22ක් ගත විය. කම්කරුවන් 20,000කට අධික පිරිසක් මෙම ව්‍යාපෘතියට දායක විය. ලෝකයේ විවිධ ප්‍රදේශවලින් ගෙන්වූ මැණික් සහ වටිනා ගල් වලින් සරසා ඇත." data-en="Construction began in 1632 and took 22 years to complete. Over 20,000 workers contributed to this grand project. It is adorned with gems and precious stones sourced from various regions around the world.">1632 දී ආරම්භ කරන ලද මෙම මහා ව්‍යාපෘතිය සම්පූර්ණ කිරීමට වසර 22ක් ගත විය. කම්කරුවන් 20,000කට අධික පිරිසක් මෙම ව්‍යාපෘතියට දායක විය. ලෝකයේ විවිධ ප්‍රදේශවලින් ගෙන්වූ මැණික් සහ වටිනා ගල් වලින් සරසා ඇත.</p>
+                    <p data-si="1983 දී UNESCO ලෝක උරුම අඩවියක් ලෙස නම් කරන ලද තාජ් මහල් අද ලෝකයේ නව අපූරු කෘති 7 අතරින් එකක් ලෙස පිළිගනී. වාර්ෂිකව සංචාරකයින් මිලියන 7-8 ක් පමණ මෙහි පැමිණේ." data-en="Named a UNESCO World Heritage Site in 1983, the Taj Mahal is today recognized as one of the New 7 Wonders of the World. Approximately 7-8 million tourists visit annually.">1983 දී UNESCO ලෝක උරුම අඩවියක් ලෙස නම් කරන ලද තාජ් මහල් අද ලෝකයේ නව අපූරු කෘති 7 අතරින් එකක් ලෙස පිළිගනී. වාර්ෂිකව සංචාරකයින් මිලියන 7-8 ක් පමණ මෙහි පැමිණේ.</p>
+                </div>
+            </div>
+
+            <!-- Timeline -->
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-marker">1631</div>
+                    <div class="timeline-content">
+                        <h3 data-si="මුම්තාස් මහල්ගේ මරණය" data-en="Death of Mumtaz Mahal">මුම්තාස් මහල්ගේ මරණය</h3>
+                        <p data-si="14 වැනි දරුවා බිහි කිරීමේදී මුම්තාස් මහල් මිය යයි" data-en="Mumtaz Mahal dies while giving birth to her 14th child">14 වැනි දරුවා බිහි කිරීමේදී මුම්තාස් මහල් මිය යයි</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-marker">1632</div>
+                    <div class="timeline-content">
+                        <h3 data-si="ඉදිකිරීම් ආරම්භය" data-en="Construction Begins">ඉදිකිරීම් ආරම්භය</h3>
+                        <p data-si="ෂාහ් ජහාන් සොහොන් මන්දිරය ඉදිකිරීම ආරම්භ කරයි" data-en="Shah Jahan begins construction of the mausoleum">ෂාහ් ජහාන් සොහොන් මන්දිරය ඉදිකිරීම ආරම්භ කරයි</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-marker">1643</div>
+                    <div class="timeline-content">
+                        <h3 data-si="ප්‍රධාන ව්‍යුහය සම්පූර්ණයි" data-en="Main Structure Complete">ප්‍රධාන ව්‍යුහය සම්පූර්ණයි</h3>
+                        <p data-si="සුදු කිරිවැලි සොහොන් මන්දිරය සම්පූර්ණ කෙරේ" data-en="The white marble mausoleum is completed">සුදු කිරිවැලි සොහොන් මන්දිරය සම්පූර්ණ කෙරේ</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-marker">1653</div>
+                    <div class="timeline-content">
+                        <h3 data-si="සම්පූර්ණ ව්‍යාපෘතිය අවසන්" data-en="Entire Project Complete">සම්පූර්ණ ව්‍යාපෘතිය අවසන්</h3>
+                        <p data-si="උද්‍යාන, මිනාර සහ අමතර ගොඩනැගිලි සම්පූර්ණ කෙරේ" data-en="Gardens, minarets and additional buildings are completed">උද්‍යාන, මිනාර සහ අමතර ගොඩනැගිලි සම්පූර්ණ කෙරේ</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-marker">1983</div>
+                    <div class="timeline-content">
+                        <h3 data-si="UNESCO ලෝක උරුම අඩවිය" data-en="UNESCO World Heritage Site">UNESCO ලෝක උරුම අඩවිය</h3>
+                        <p data-si="තාජ් මහල් UNESCO ලෝක උරුම අඩවියක් ලෙස නම් කෙරේ" data-en="Taj Mahal is designated as a UNESCO World Heritage Site">තාජ් මහල් UNESCO ලෝක උරුම අඩවියක් ලෙස නම් කෙරේ</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features / 3 Main Topics -->
+    <section id="features" class="features-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-si="විශේෂාංග" data-en="Features">විශේෂාංග</span>
+                <h2 class="section-title" data-si="තාජ් මහල් විශේෂතා" data-en="Special Features of Taj Mahal">තාජ් මහල් විශේෂතා</h2>
+                <div class="title-divider"><span>✦</span></div>
+            </div>
+
+            <!-- Feature 1 -->
+            <div class="feature-card" id="feature1">
+                <div class="feature-image-container">
+                    <img src="images/taj_mahal_architecture.jpg" alt="Architecture" class="feature-image">
+                    <div class="feature-image-overlay">
+                        <span class="feature-number">01</span>
+                    </div>
+                </div>
+                <div class="feature-text">
+                    <h3 class="feature-title" data-si="🏛️ වාස්තු විද්‍යාත්මක පරිපූර්ණත්වය" data-en="🏛️ Architectural Perfection">🏛️ වාස්තු විද්‍යාත්මක පරිපූර්ණත්වය</h3>
+                    <p data-si="තාජ් මහල් ඉස්ලාමීය, පර්සියානු, ඔටෝමාන් සහ ඉන්දියානු වාස්තු විද්‍යා ශෛලීන් ඒකරාශී කර ගත් අපූර්ව නිර්මාණයකි. ප්‍රධාන සුදු කිරිවැලි වට්ටෝරුව 73 මීටර් (240 අඩි) උසය. මධ්‍යයේ පිහිටි ක්‍රම්භාග්‍රය (dome) 35 මීටර් උසින් යුක්ත වන අතර, කෝණවල සිව්වැදෑරුම් මිනාර (minarets) 40 මීටර් බැගින් උස ය. මෙම මිනාර නිර්මාණය කර ඇත්තේ මඳක් පිටතට ඇළ වී ඇති ආකාරයෙන් වන අතර, එය භූමිකම්පාවකදී ප්‍රධාන ගොඩනැගිල්ල මත නොවැටී පිටතට වැටෙන ලෙසය." data-en="The Taj Mahal is a masterpiece that combines Islamic, Persian, Ottoman and Indian architectural styles. The main white marble structure is 73 meters (240 feet) tall. The central dome is 35 meters high, while the four minarets at the corners are each 40 meters tall. These minarets are designed to lean slightly outward so that in case of an earthquake, they would fall away from the main building rather than onto it.">තාජ් මහල් ඉස්ලාමීය, පර්සියානු, ඔටෝමාන් සහ ඉන්දියානු වාස්තු විද්‍යා ශෛලීන් ඒකරාශී කර ගත් අපූර්ව නිර්මාණයකි. ප්‍රධාන සුදු කිරිවැලි වට්ටෝරුව 73 මීටර් (240 අඩි) උසය. මධ්‍යයේ පිහිටි ක්‍රම්භාග්‍රය (dome) 35 මීටර් උසින් යුක්ත වන අතර, කෝණවල සිව්වැදෑරුම් මිනාර (minarets) 40 මීටර් බැගින් උස ය. මෙම මිනාර නිර්මාණය කර ඇත්තේ මඳක් පිටතට ඇළ වී ඇති ආකාරයෙන් වන අතර, එය භූමිකම්පාවකදී ප්‍රධාන ගොඩනැගිල්ල මත නොවැටී පිටතට වැටෙන ලෙසය.</p>
+                </div>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="feature-card reverse" id="feature2">
+                <div class="feature-image-container">
+                    <img src="images/taj_mahal_interior.jpg" alt="Interior" class="feature-image">
+                    <div class="feature-image-overlay">
+                        <span class="feature-number">02</span>
+                    </div>
+                </div>
+                <div class="feature-text">
+                    <h3 class="feature-title" data-si="💎 පියෙත්‍රා ඩූරා කලාව" data-en="💎 Pietra Dura Art">💎 පියෙත්‍රා ඩූරා කලාව</h3>
+                    <p data-si="තාජ් මහල්හි අභ්‍යන්තරය පියෙත්‍රා ඩූරා (Pietra Dura) නම් ඉතා සියුම් මැණික් කැටයම් ශිල්පයෙන් අලංකාර කර ඇත. සුදු කිරිවැලි මතුපිට තුළට නීලම්, මරකත, පරවා, කොරල් සහ පබළු වැනි අර්ධ වටිනා මැණික් ගල් 28කට අධික ප්‍රමාණයක් ක්ෂුද්‍ර මල් සහ ජ්‍යාමිතික රටා ලෙස කැන්දා ඇත. මෙම මැණික් ගල් ශ්‍රී ලංකාව, තිබෙට්, අරාබිය සහ ඇෆ්ගනිස්ථානය ඇතුළු රටවලින් ගෙන්වා ඇත." data-en="The interior of the Taj Mahal is decorated with the exquisite art of Pietra Dura - intricate gem inlay work. Over 28 types of semi-precious stones including sapphire, emerald, turquoise, coral and pearls have been inlaid into the white marble surface as miniature flowers and geometric patterns. These precious stones were sourced from countries including Sri Lanka, Tibet, Arabia and Afghanistan.">තාජ් මහල්හි අභ්‍යන්තරය පියෙත්‍රා ඩූරා (Pietra Dura) නම් ඉතා සියුම් මැණික් කැටයම් ශිල්පයෙන් අලංකාර කර ඇත. සුදු කිරිවැලි මතුපිට තුළට නීලම්, මරකත, පරවා, කොරල් සහ පබළු වැනි අර්ධ වටිනා මැණික් ගල් 28කට අධික ප්‍රමාණයක් ක්ෂුද්‍ර මල් සහ ජ්‍යාමිතික රටා ලෙස කැන්දා ඇත. මෙම මැණික් ගල් ශ්‍රී ලංකාව, තිබෙට්, අරාබිය සහ ඇෆ්ගනිස්ථානය ඇතුළු රටවලින් ගෙන්වා ඇත.</p>
+                </div>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="feature-card" id="feature3">
+                <div class="feature-image-container">
+                    <img src="images/taj_mahal_garden.jpg" alt="Gardens" class="feature-image">
+                    <div class="feature-image-overlay">
+                        <span class="feature-number">03</span>
+                    </div>
+                </div>
+                <div class="feature-text">
+                    <h3 class="feature-title" data-si="🌿 චාර්බාග් උද්‍යානය" data-en="🌿 Charbagh Garden">🌿 චාර්බාග් උද්‍යානය</h3>
+                    <p data-si="තාජ් මහල් වටා පිහිටි චාර්බාග් (Charbagh) උද්‍යානය හෙක්ටයාර් 17 ක විශාලත්වයකින් යුත් මුඝල් උද්‍යාන සම්ප්‍රදායේ අගනා නිදසුනකි. 'චාර්බාග්' යන්නෙහි අර්ථය 'සතර බෙදුණු උද්‍යානය' යන්නය. මෙම උද්‍යානය මධ්‍ය ජල මාර්ගයකින් කොටස් 4 කට බෙදා ඇති අතර, එක් එක් කොටස තවත් කොටස් 4 කට බෙදී මුළු කොටස් 16 ක් සාදයි. ඉස්ලාමීය සම්ප්‍රදායට අනුව මෙය ස්වර්ගයේ උද්‍යානය නිරූපණය කරයි." data-en="The Charbagh garden surrounding the Taj Mahal is a fine example of the Mughal garden tradition, spanning 17 hectares. 'Charbagh' means 'four-quartered garden.' The garden is divided into 4 sections by a central water channel, with each section further divided into 4 parts, creating a total of 16 sections. According to Islamic tradition, this represents the garden of paradise.">තාජ් මහල් වටා පිහිටි චාර්බාග් (Charbagh) උද්‍යානය හෙක්ටයාර් 17 ක විශාලත්වයකින් යුත් මුඝල් උද්‍යාන සම්ප්‍රදායේ අගනා නිදසුනකි. 'චාර්බාග්' යන්නෙහි අර්ථය 'සතර බෙදුණු උද්‍යානය' යන්නය. මෙම උද්‍යානය මධ්‍ය ජල මාර්ගයකින් කොටස් 4 කට බෙදා ඇති අතර, එක් එක් කොටස තවත් කොටස් 4 කට බෙදී මුළු කොටස් 16 ක් සාදයි. ඉස්ලාමීය සම්ප්‍රදායට අනුව මෙය ස්වර්ගයේ උද්‍යානය නිරූපණය කරයි.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-si="ගැලරිය" data-en="Gallery">ගැලරිය</span>
+                <h2 class="section-title" data-si="ඡායාරූප ගැලරිය" data-en="Photo Gallery">ඡායාරූප ගැලරිය</h2>
+                <div class="title-divider"><span>📸</span></div>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item" onclick="openLightbox(0)">
+                    <img src="images/taj_mahal_hero.jpg" alt="Taj Mahal Sunrise">
+                    <div class="gallery-overlay">
+                        <span class="gallery-icon">🔍</span>
+                        <span class="gallery-label" data-si="හිරු උදාව" data-en="Sunrise">හිරු උදාව</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(1)">
+                    <img src="images/taj_mahal_night.jpg" alt="Taj Mahal Night">
+                    <div class="gallery-overlay">
+                        <span class="gallery-icon">🔍</span>
+                        <span class="gallery-label" data-si="රාත්‍රී දර්ශනය" data-en="Night View">රාත්‍රී දර්ශනය</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(2)">
+                    <img src="images/taj_mahal_interior.jpg" alt="Interior">
+                    <div class="gallery-overlay">
+                        <span class="gallery-icon">🔍</span>
+                        <span class="gallery-label" data-si="අභ්‍යන්තරය" data-en="Interior">අභ්‍යන්තරය</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(3)">
+                    <img src="images/taj_mahal_garden.jpg" alt="Gardens">
+                    <div class="gallery-overlay">
+                        <span class="gallery-icon">🔍</span>
+                        <span class="gallery-label" data-si="උද්‍යානය" data-en="Gardens">උද්‍යානය</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(4)">
+                    <img src="images/taj_mahal_architecture.jpg" alt="Architecture">
+                    <div class="gallery-overlay">
+                        <span class="gallery-icon">🔍</span>
+                        <span class="gallery-label" data-si="වාස්තු විද්‍යාව" data-en="Architecture">වාස්තු විද්‍යාව</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(5)">
+                    <img src="images/shah_jahan_mumtaz.jpg" alt="Shah Jahan & Mumtaz">
+                    <div class="gallery-overlay">
+                        <span class="gallery-icon">🔍</span>
+                        <span class="gallery-label" data-si="ෂාහ් ජහාන් සහ මුම්තාස්" data-en="Shah Jahan & Mumtaz">ෂාහ් ජහාන් සහ මුම්තාස්</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+        <button class="lightbox-prev" onclick="changeLightbox(-1)">❮</button>
+        <img src="" alt="" class="lightbox-image" id="lightboxImage">
+        <button class="lightbox-next" onclick="changeLightbox(1)">❯</button>
+        <div class="lightbox-caption" id="lightboxCaption"></div>
+    </div>
+
+    <!-- News Section -->
+    <section id="news" class="news-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-si="පුවත්" data-en="News">පුවත්</span>
+                <h2 class="section-title" data-si="නවතම පුවත් සහ යාවත්කාලීන" data-en="Latest News & Updates">නවතම පුවත් සහ යාවත්කාලීන</h2>
+                <div class="title-divider"><span>📰</span></div>
+            </div>
+
+            <div class="news-ticker">
+                <div class="ticker-label" data-si="⚡ යාවත්කාලීන" data-en="⚡ Updates">⚡ යාවත්කාලීන</div>
+                <div class="ticker-content">
+                    <div class="ticker-text" id="tickerText">
+                        <span data-si="තාජ් මහල් 2026 ප්‍රතිසංස්කරණ ව්‍යාපෘතිය සාර්ථකව ඉදිරියට ⬥ UNESCO නව සංරක්ෂණ මාර්ගෝපදේශ නිකුත් කරයි ⬥ සංචාරකයින් සඳහා නව ඩිජිටල් ටිකට් පද්ධතිය ⬥ රාත්‍රී සංචාරයට නව නීති" data-en="Taj Mahal 2026 restoration project progressing successfully ⬥ UNESCO issues new conservation guidelines ⬥ New digital ticketing system for tourists ⬥ New rules for night visits">තාජ් මහල් 2026 ප්‍රතිසංස්කරණ ව්‍යාපෘතිය සාර්ථකව ඉදිරියට ⬥ UNESCO නව සංරක්ෂණ මාර්ගෝපදේශ නිකුත් කරයි ⬥ සංචාරකයින් සඳහා නව ඩිජිටල් ටිකට් පද්ධතිය ⬥ රාත්‍රී සංචාරයට නව නීති</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="news-grid">
+                <article class="news-card" id="news1">
+                    <div class="news-card-header">
+                        <span class="news-date">2026-10-20</span>
+                        <span class="news-badge" data-si="නවතම" data-en="Latest">නවතම</span>
+                    </div>
+                    <h3 class="news-title" data-si="තාජ් මහල් ප්‍රතිසංස්කරණ ව්‍යාපෘතියේ නව අදියර" data-en="New Phase of Taj Mahal Restoration Project">තාජ් මහල් ප්‍රතිසංස්කරණ ව්‍යාපෘතියේ නව අදියර</h3>
+                    <p class="news-excerpt" data-si="ඉන්දියානු පුරාවිද්‍යා සමීක්ෂණ දෙපාර්තමේන්තුව (ASI) විසින් තාජ් මහල්හි ප්‍රතිසංස්කරණ ව්‍යාපෘතියේ නව අදියරක් ආරම්භ කර ඇත. මෙම ව්‍යාපෘතිය මගින් කිරිවැලි මතුපිට පිරිසිදු කිරීම සහ අලුත්වැඩියා කිරීම සිදු කෙරේ." data-en="The Archaeological Survey of India (ASI) has launched a new phase of the Taj Mahal restoration project. This project involves cleaning and repairing the marble surface.">ඉන්දියානු පුරාවිද්‍යා සමීක්ෂණ දෙපාර්තමේන්තුව (ASI) විසින් තාජ් මහල්හි ප්‍රතිසංස්කරණ ව්‍යාපෘතියේ නව අදියරක් ආරම්භ කර ඇත. මෙම ව්‍යාපෘතිය මගින් කිරිවැලි මතුපිට පිරිසිදු කිරීම සහ අලුත්වැඩියා කිරීම සිදු කෙරේ.</p>
+                </article>
+
+                <article class="news-card" id="news2">
+                    <div class="news-card-header">
+                        <span class="news-date">2026-10-15</span>
+                        <span class="news-badge trending" data-si="ජනප්‍රිය" data-en="Trending">ජනප්‍රිය</span>
+                    </div>
+                    <h3 class="news-title" data-si="සංචාරක ප්‍රවේශ ගාස්තු සංශෝධනය" data-en="Tourist Entry Fee Revision">සංචාරක ප්‍රවේශ ගාස්තු සංශෝධනය</h3>
+                    <p class="news-excerpt" data-si="2026 නොවැම්බර් මාසයේ සිට තාජ් මහල් සඳහා නව ප්‍රවේශ ගාස්තු ක්‍රමයක් ක්‍රියාත්මක වේ. ඉන්දියානු පුරවැසියන්ට රුපියල් 50 ක් ද, SAARC රටවල පුරවැසියන්ට රුපියල් 540 ක් ද, අනෙකුත් විදේශිකයින්ට රුපියල් 1100 ක් ද වශයෙන් ගාස්තු අය කෙරේ." data-en="A new entry fee system for the Taj Mahal will be implemented from November 2026. Indian citizens will be charged ₹50, SAARC country citizens ₹540, and other foreign nationals ₹1100.">2026 නොවැම්බර් මාසයේ සිට තාජ් මහල් සඳහා නව ප්‍රවේශ ගාස්තු ක්‍රමයක් ක්‍රියාත්මක වේ. ඉන්දියානු පුරවැසියන්ට රුපියල් 50 ක් ද, SAARC රටවල පුරවැසියන්ට රුපියල් 540 ක් ද, අනෙකුත් විදේශිකයින්ට රුපියල් 1100 ක් ද වශයෙන් ගාස්තු අය කෙරේ.</p>
+                </article>
+
+                <article class="news-card" id="news3">
+                    <div class="news-card-header">
+                        <span class="news-date">2026-10-10</span>
+                        <span class="news-badge" data-si="නවතම" data-en="Latest">නවතම</span>
+                    </div>
+                    <h3 class="news-title" data-si="රාත්‍රී සංචාරයට නව නීති" data-en="New Rules for Night Visits">රාත්‍රී සංචාරයට නව නීති</h3>
+                    <p class="news-excerpt" data-si="පුර්ණ සඳ රාත්‍රි 5 තුළ තාජ් මහල් නැරඹීමේ අවස්ථාව සංචාරකයින්ට ලබා දීමට තීරණය කර ඇත. එක් රාත්‍රියකට සංචාරකයින් 400 කට පමණක් ඉඩ ලබා දෙන අතර, පූර්ව වෙන්කිරීම අනිවාර්ය වේ." data-en="It has been decided to allow tourists to view the Taj Mahal during 5 full moon nights. Only 400 tourists per night will be allowed, and advance booking is mandatory.">පුර්ණ සඳ රාත්‍රි 5 තුළ තාජ් මහල් නැරඹීමේ අවස්ථාව සංචාරකයින්ට ලබා දීමට තීරණය කර ඇත. එක් රාත්‍රියකට සංචාරකයින් 400 කට පමණක් ඉඩ ලබා දෙන අතර, පූර්ව වෙන්කිරීම අනිවාර්ය වේ.</p>
+                </article>
+
+                <article class="news-card" id="news4">
+                    <div class="news-card-header">
+                        <span class="news-date">2026-10-05</span>
+                        <span class="news-badge trending" data-si="ජනප්‍රිය" data-en="Trending">ජනප්‍රිය</span>
+                    </div>
+                    <h3 class="news-title" data-si="ආග්‍රා නගරයේ වායු ගුණත්වය වැඩිදියුණු කිරීමේ ව්‍යාපෘතිය" data-en="Agra City Air Quality Improvement Project">ආග්‍රා නගරයේ වායු ගුණත්වය වැඩිදියුණු කිරීමේ ව්‍යාපෘතිය</h3>
+                    <p class="news-excerpt" data-si="තාජ් මහල්හි සුදු කිරිවැලි කහ පැහැ ගැන්වීම වැලැක්වීම සඳහා ආග්‍රා නගරයේ වායු ගුණත්වය වැඩිදියුණු කිරීමේ නව ව්‍යාපෘතියක් ආරම්භ කර ඇත. මෙමගින් නගරය වටා කර්මාන්ත ශාලා වසා දැමීම සහ හරිත කලාප ස්ථාපනය සිදු කෙරේ." data-en="A new project to improve air quality in Agra city has been launched to prevent the yellowing of the Taj Mahal's white marble. This involves closing factories around the city and establishing green zones.">තාජ් මහල්හි සුදු කිරිවැලි කහ පැහැ ගැන්වීම වැලැක්වීම සඳහා ආග්‍රා නගරයේ වායු ගුණත්වය වැඩිදියුණු කිරීමේ නව ව්‍යාපෘතියක් ආරම්භ කර ඇත. මෙමගින් නගරය වටා කර්මාන්ත ශාලා වසා දැමීම සහ හරිත කලාප ස්ථාපනය සිදු කෙරේ.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number" data-target="1632" data-si="ක්‍රි.ව." data-en="AD">1632</div>
+                    <div class="stat-label" data-si="ආරම්භ වර්ෂය" data-en="Year Started">ආරම්භ වර්ෂය</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="22">22</div>
+                    <div class="stat-label" data-si="ඉදිකිරීම් වසර" data-en="Years to Build">ඉදිකිරීම් වසර</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="20000">20,000+</div>
+                    <div class="stat-label" data-si="කම්කරුවන්" data-en="Workers">කම්කරුවන්</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="8">~8M</div>
+                    <div class="stat-label" data-si="වාර්ෂික සංචාරකයින්" data-en="Annual Visitors">වාර්ෂික සංචාරකයින්</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>🕌 Janidu Kaveesha</h3>
+                    <p data-si="තාජ් මහල් - ප්‍රේමයේ සදාකාලික සංකේතය" data-en="Taj Mahal - The Eternal Symbol of Love">තාජ් මහල් - ප්‍රේමයේ සදාකාලික සංකේතය</p>
+                    <div class="recommended-footer">
+                        <span>⭐ Rusiru Sir Recommended</span>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4 data-si="ඉක්මන් සබැඳි" data-en="Quick Links">ඉක්මන් සබැඳි</h4>
+                    <a href="#home" data-si="මුල් පිටුව" data-en="Home">මුල් පිටුව</a>
+                    <a href="#history" data-si="ඉතිහාසය" data-en="History">ඉතිහාසය</a>
+                    <a href="#features" data-si="විශේෂාංග" data-en="Features">විශේෂාංග</a>
+                    <a href="#gallery" data-si="ගැලරිය" data-en="Gallery">ගැලරිය</a>
+                    <a href="#news" data-si="පුවත්" data-en="News">පුවත්</a>
+                </div>
+                <div class="footer-info">
+                    <h4 data-si="තොරතුරු" data-en="Information">තොරතුරු</h4>
+                    <p data-si="📍 ආග්‍රා, උත්තර ප්‍රදේශ්, ඉන්දියාව" data-en="📍 Agra, Uttar Pradesh, India">📍 ආග්‍රා, උත්තර ප්‍රදේශ්, ඉන්දියාව</p>
+                    <p data-si="🌐 www.janidukaveesha.com" data-en="🌐 www.janidukaveesha.com">🌐 www.janidukaveesha.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Janidu Kaveesha | <span data-si="සියලුම හිමිකම් ඇවිරිණි" data-en="All Rights Reserved">සියලුම හිමිකම් ඇවිරිණි</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
